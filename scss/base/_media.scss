@@ -5,5 +5,11 @@
     }
 }
 
-/*Lu, me gustaría hacer con mediaqueries que si el usuario abre el sitio desde el celular o tablet, no aparezca el video de inicio.*/
 
+@media only screen and (min-width: 768px) {
+    .video1 {
+        display: none;
+    }
+}
+
+// quiero que desaparezca el video cuando se abre el sitio en tablet y mobile y no funciona

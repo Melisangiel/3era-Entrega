@@ -12,12 +12,26 @@ a {
 
 p, .paragraph, h3 {
     font-family: $font-family-2;
-    font-size: 20px;
+    font-size: 200px;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: rgb(0, 0, 0);
+    color: black;
+}
+
+.p-reseña {
+    display: inline;
+}
+
+.p-info {
+    margin-left: 10px;
 }
 
 .somosContainer, .salgoContainer, .listas, #reseñas{
-@extend %photo-container; 
+    @extend %photo-container; 
 }
+
+.mapa {
+    height: 250px;
+    width: 250px;
+}
+

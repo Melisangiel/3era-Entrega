@@ -1,10 +1,10 @@
 #nosotras, #listas, #contacto {
-    background-color: beige;
+    background-color: black;
     @extend %section;
 }
 
 #dondesalir, #eventos {
-    background-color: rgb(248, 240, 173);
+    background-color: black;
     @extend %section;
 }
 

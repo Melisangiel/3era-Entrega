@@ -22,6 +22,7 @@
 .ah2, h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #620110;
+  text-align: center;
 }
 
 /*Links*/
@@ -55,7 +56,7 @@ a {
   height: 350px;
 }
 
-.imgReseña {
+.img-reseña, .imgReseña {
   height: 285px;
   width: 250px;
 }
@@ -66,7 +67,11 @@ a {
     margin-right: auto;
   }
 }
-/*Lu, me gustaría hacer con mediaqueries que si el usuario abre el sitio desde el celular o tablet, no aparezca el video de inicio.*/
+@media only screen and (min-width: 768px) {
+  .video1 {
+    display: none;
+  }
+}
 /* Menú */
 .nav-link {
   height: 40px;
@@ -95,11 +100,21 @@ a {
   justify-content: center;
 }
 
-/*Foto reseña*/
+/*Foto reseña en Index*/
+/*Foto reseña en Reseña*/
+.img-reseña {
+  float: left;
+}
+
 /*Fotos lista*/
 .photoListaBurga:hover, .photoListaAfter:hover, .photoListaBrunch:hover, .photoListaDulce:hover,
 .photoListaPicada:hover, .photoListaVegan:hover {
   border: 2px solid #f3c649;
+}
+
+#listas img {
+  width: 250px;
+  height: 250px;
 }
 
 /*Footer*/
@@ -137,11 +152,11 @@ h3 {
 }
 
 #nosotras, #listas, #contacto {
-  background-color: beige;
+  background-color: black;
 }
 
 #dondesalir, #eventos {
-  background-color: #f8f0ad;
+  background-color: black;
 }
 
 /* Contacto */
@@ -331,10 +346,23 @@ body {
 /*Paragraph*/
 p, .paragraph, h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 200px;
   margin-top: 5px;
   margin-bottom: 5px;
   color: black;
+}
+
+.p-reseña {
+  display: inline;
+}
+
+.p-info {
+  margin-left: 10px;
+}
+
+.mapa {
+  height: 250px;
+  width: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */

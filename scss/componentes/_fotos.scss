@@ -7,9 +7,15 @@
     justify-content: center;
 }
 
-/*Foto reseña*/
+/*Foto reseña en Index*/
 .imgReseña {
     @extend %photo-reseña;
+}
+
+/*Foto reseña en Reseña*/
+.img-reseña {
+    @extend %photo-reseña;
+    float: left;
 }
 
 /*Fotos lista*/
@@ -23,8 +29,16 @@
     border: 2px solid rgb(243, 198, 73);
 }
 
+#listas {
+    img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
 /*Footer*/
 .imgFooter {
     height: 40px;
     width: 40px;
 }
+

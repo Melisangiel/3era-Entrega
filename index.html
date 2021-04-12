@@ -6,7 +6,6 @@
     <meta name="description" content="Sitio web que recomienda a través de reseñas gastronómicas, lugares, restaurantes y bares, para ir a comer en Buenos Aires y por el mundo.">
     <meta name="keywords" content="comida, comer, reseña, Buenos Aires, recomiendo, food, cena, postre, dulce, after, salida, cita, amigos, diversión, disfrutar">
     <meta name="author" content="Melisa Angielczyk">
-    <meta name="author" content="Melisa Angielczyk">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Ba Eat">
     <meta property="og:description" content="Sitio web que recomienda lugares para ir a comer en Buenos Aires.">
@@ -14,6 +13,7 @@
     <meta property="og:site_name" content="Ba Eat">
     <link rel="shortcut icon" href="IMAGENES/logo.trans (2).png" type="image/x-icon">
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.scss"> 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
@@ -41,26 +41,26 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">BA EAT</a>
+        <a class="navbar-brand" href="#">ba.eat</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-warning" href="#nosotras">Quiénes somos</a>
+              <a class="nav-link text-white font-weight-bold" href="#nosotras">QUIÉNES SOMOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="dondesalgo.html">A dónde salgo hoy</a>
+              <a class="nav-link text-white font-weight-bold" href="dondesalgo.html">A DÓNDE SALGO HOY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="listas.html">Ordenadito en listas</a>
+              <a class="nav-link text-white font-weight-bold" href="listas.html">ORDENADITO EN LISTAS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning"  href="eventos.html">Eventos</a>
+              <a class="nav-link text-white font-weight-bold"  href="eventos.html">EVENTOS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-warning"  href="#contacto">Contacto</a>
+                <a class="nav-link text-white font-weight-bold"  href="#contacto">CONTACTO</a>
               </li>
           </ul>
         </div>
@@ -95,18 +95,19 @@
         <h3 class="paragraph">Te contamos qué comemos y dónde. Dulce, salado, brunch, almuerzo, cena. Todo. </h3>    
         <div class="salgoContainer row">
             <div class="reseñaItems col-lg-3 col-md-6 col-sm-6">
-                <h4 class="reseñatitle">Mercado Soho</h4> 
-                <img class="imgReseña" src="IMAGENES/Mercado Soho.jpeg" alt="Mercado Soho"> 
+              <h4 class="reseñatitle">Mercado Soho</h4> 
+              <a href="soho.html"><img class="imgReseña" src="IMAGENES/Mercado Soho.jpeg" alt="Mercado Soho"> </a>
             </div>
+    
            
             <div class="reseñaItems col-lg-3 col-md-6 col-sm-6">
                 <h4 class="reseñatitle">Rústica Pastelería</h4> 
-                <img class="imgReseña" src="IMAGENES/Rústica.jpeg" alt="Rústica Pastelería">
+                <a href="rustica.html"><img class="imgReseña" src="IMAGENES/Rústica.jpeg" alt="Rústica Pastelería"></a>
             </div>
             
            <div class="reseñaItems col-lg-3 col-md-6 col-sm-6"> 
             <h4 class="reseñatitle">Central Market</h4> 
-            <img class="imgReseña" src="IMAGENES/Central Market.jpeg" alt="Central Market">
+            <a href="central-market.html"><img class="imgReseña" src="IMAGENES/Central Market.jpeg" alt="Central Market"></a>
             </div>
         </div>
 
@@ -195,22 +196,21 @@ class="contact-form">
 
 </main> 
 
-    <footer>
+  <footer>
        
-<a href="index.html" class="volverArriba text-warning">Volver arriba</a>
+<a href="index.html" class="volverArriba text-dark">Volver arriba</a>
        
 
 <div class="footer1">
     <img class="imgFooter" src="IMAGENES/instagram.jpg" alt="Logo de Instagram">
-    <p class="footer text-warning">@ba.eat</p>
+    <a href="https://www.instagram.com/ba.eat/" target="_blank" class="footer text-dark">@ba.eat</a>
 </div>
 <div class="footer2">
     <img class="imgFooter" src="IMAGENES/mail.png" alt="Ícono de mail">
-    <p class="footer text-warning">buenosaireseating@gmail.com</p>
+   <a href="contacto.html" class="footer text-dark">buenosaireseating@gmail.com</a>
 </div>
+  </footer>
 
-
-    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
