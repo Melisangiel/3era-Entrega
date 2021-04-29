@@ -9,7 +9,15 @@
     z-index: 6;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    
+        &:hover {
+        color:gray !important;
+        text-decoration: underline !important;
+    }
 }
+
+
+
 
 .navbar-brand {
     font-family: 'Roboto', sans-serif;

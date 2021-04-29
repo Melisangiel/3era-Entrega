@@ -315,6 +315,10 @@ h3 {
 }
 
 /*Footer*/
+.foot {
+  background-color: #343a40;
+}
+
 .footer {
   font-family: "Roboto", sans-serif;
   font-size: 14px;

@@ -28,3 +28,10 @@
 
 @import "general/general";
 
+body {
+    overflow-x: hidden;
+}
+
+.dondeLinks:hover  {
+    text-decoration: none !important;
+}
